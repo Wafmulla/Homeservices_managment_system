@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+    
+*{
+    box-sizing: border-box;
+}
+body{
+ 
+   font-family: 'Playfair Display', serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+.box{
+    width: 150px;
+    height: auto;
+    margin:5px;
+position:relative;
+border: 1px solid black;
+
+    
+}
+.content{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    opacity:0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+
+}
+.box:hover .content{
+    top:50%;
+    opacity:1;
+}
+img{
+    width: 100%;
+  
+}
+.box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    opacity: 0;
+    transition:opacity 200ms ease-in-out;
+}
+.box:hover::after{
+ opacity: 1;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+</style>
+
+    <title>My code</title>
+</head>
+<body>
+<div class="main">
+  <div class="box">
+    <img src="./images/img1.png" alt="">
+    <p class="content"><a href="./feedback.html">see profile</a></p>
+  </div>
+  <div class="box">
+    <img src="./img/pexels-david-bartus-586687.jpg" alt="">
+    <p class="content">hello</p>
+  </div>
+  <div class="box">
+    <img src="./img/pexels-david-bartus-586687.jpg" alt="">
+    <p class="content">hello</p>
+  </div>
+  <div class="box">
+    <img src="./img/pexels-david-bartus-586687.jpg" alt="">
+    <p class="content">hello</p>
+  </div>
+  </div>
+</body>
+</html>

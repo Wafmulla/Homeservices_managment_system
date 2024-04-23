@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:62.5%;
+
+}
+.navg{
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+justify-content:center;
+background-color:rgba(0, 0, 0, 0.651);
+padding:2rem;
+color:white;
+font-size: large;
+
+}
+.navg a{
+    text-decoration: none;
+    margin:2rem;
+    color:white;
+    font-size:2rem;
+  
+    transition: all 0.3s ease-in-out;
+    padding:1rem;
+    border-radius: 1rem;
+    list-style-type:none;
+    
+}
+.navg li{
+    list-style-type:none;
+}
+.navg li a:hover{
+    background-color: rgba(8, 8, 8, 0.651)
+}
+.welcome{
+    font-size: 3rem;
+    margin-top:2rem;
+    animation: slide 10s infinite ease-in-out;
+}
+@keyframes slide{
+    0%{
+         transform: translateX(-20%);
+    }
+  
+100%{
+    transform: translateX(100%);
+}
+
+    
+}
+.home{
+     height:100vh;
+     width: 100wh;
+    background:url('./images/pexels-fwstudio-164005.jpg');
+    border:1px solid rgba(0, 0, 0, 0);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.navg ul li{
+    list-style-type:none;
+}
+
+.navg li a{
+    text-decoration: none;
+    margin:2rem;
+    color:white;
+    font-size:2rem;
+  
+    transition: all 0.3s ease-in-out;
+    padding:1rem;
+    border-radius: 1rem;
+
+}
+.navg li a:hover{
+    background-color: rgba(8, 8, 8, 0.651)
+}
+
+.block{
+ display:flex;
+  margin-top:7rem;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 25px 0px rgb(2, 2, 2);
+  justify-content: center;
+
+}
+.block .img{
+    flex-grow: 1;
+    width:40%;
+    flex-shrink: 1;
+    transform: translateX(-100%);
+  
+    animation: position 0.3s forwards ease-in-out;
+}
+@keyframes position{
+    100%{
+        transform: translate(0%);
+
+    }
+   
+}
+.block .img img{
+    height: 100%;
+    width: 100%;
+}
+.block .text{
+    padding: 5rem;
+      line-height: 2em;
+    flex-grow:1;
+    flex-shrink: 1;
+    text-align: center;
+    padding: auto;
+    width:40%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(5, 5, 5, 0.678);
+    transform: translateX(100%);
+    animation: position 0.3s forwards ease-in-out;
+}
+.button{
+    width:10%;
+    padding: 7em;
+    border-radius: 5em;
+    margin: 2px auto ;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: aliceblue;
+    text-align: center;
+}
+.button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 8em;
+}
+/* signup */
+.sign{
+    font-size: 50px;
+   padding:2em;
+}
